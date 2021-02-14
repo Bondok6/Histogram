@@ -12,6 +12,7 @@ flowerGray = cv2.convertScaleAbs(flowerGray, alpha=1.10, beta=40)
 cv2.imshow('original', flowerGray)
 cv2.waitKey(0)
 
+########################################
 
 def Hist(image):
     H = np.zeros(shape=(265, 1))
@@ -28,6 +29,7 @@ histg = Hist(flowerGray)
 plt.plot(histg)
 plt.show()
 
+#####################################
 
 x = histg.reshape(1, 265)
 y = np.zeros((1, 265))
